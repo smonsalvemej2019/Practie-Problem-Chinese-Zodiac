@@ -12,10 +12,11 @@ using namespace std;//BAD PRACTICE!!!
 
 
 class ZoadiacCalc{
+
 public:
     
     //method for calculating the chinese zodiac
-     //CalcYear can alsp be a constructor
+    //CalcYear can alsp be a constructor
     void CalcYear(int year);
     
    
