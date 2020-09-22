@@ -2,7 +2,7 @@
 
 //
 //This program lets you input a year and it will return the chinese zodiac of that year
-//The program hilights basic OOP and modular arithmetic
+//The program features basic OOP and modular arithmetic
 
 #include <iostream>
 using namespace std;//BAD PRACTICE!!!
@@ -27,18 +27,23 @@ private:
 };
 
 //method definition
+
 void ZoadiacCalc::CalcYear(int year){
     
     {
     
  
-        //(YEAR) mod (NUMBER OF ZODIAC SIGNS)    
+        //(YEAR) mod (NUMBER OF ZODIAC SIGNS)   
+        
         int remainder = year%12;
         
         {
+        
         //switch statement for each different remainder
+        
         switch(remainder){
-            //This is not Year = 0;    
+        
+            
             case 0: 
                 
                 cout<<"Year of the Monkey"<<endl;
