@@ -7,7 +7,10 @@
 #include <iostream>
 using namespace std;//BAD PRACTICE!!!
 
+
 //Our only class being used
+
+
 class ZoadiacCalc{
 public:
     
