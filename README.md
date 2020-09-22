@@ -7,33 +7,35 @@
 #include <iostream>
 using namespace std;//BAD PRACTICE!!!
 
-
-class ZoadiacCalc{//Our only class being used
+//Our only class being used
+class ZoadiacCalc{
 public:
     
+    //method for calculating the chinese zodiac
+     //CalcYear can alsp be a constructor
+    void CalcYear(int year);
     
-    void CalcYear(int year);//method for calculating the chinese zodiac
-    
-    //CalcYear can alsp be a constructor
+   
     
 private:
     
     int year =0 ;
 };
 
-
-void ZoadiacCalc::CalcYear(int year){//method definition
+//method definition
+void ZoadiacCalc::CalcYear(int year){
     
     {
     
  
-            
-        int remainder = year%12;//(YEAR) mod (NUMBER OF ZODIAC SIGNS)
+        //(YEAR) mod (NUMBER OF ZODIAC SIGNS)    
+        int remainder = year%12;
         
         {
-        switch(remainder){//switch statement for each different remainder
-                
-            case 0: //This is not Year = 0;
+        //switch statement for each different remainder
+        switch(remainder){
+            //This is not Year = 0;    
+            case 0: 
                 
                 cout<<"Year of the Monkey"<<endl;
                 break;
@@ -106,7 +108,8 @@ int main() {
     
     
     ZoadiacCalc test1;
-    test1.CalcYear(2019);//we input 2019 into the method
+    //we input 2019 into the method
+    test1.CalcYear(2019);
     
     ZoadiacCalc test2;
     test2.CalcYear(1991);
